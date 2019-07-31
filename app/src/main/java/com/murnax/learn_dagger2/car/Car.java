@@ -2,8 +2,11 @@ package com.murnax.learn_dagger2.car;
 
 import android.util.Log;
 
+import com.murnax.learn_dagger2.dagger.PerActivity;
+
 import javax.inject.Inject;
 
+@PerActivity
 public class Car {
     private static final String TAG = "Car";
 
