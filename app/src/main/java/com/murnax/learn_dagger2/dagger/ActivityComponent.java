@@ -9,7 +9,7 @@ import dagger.BindsInstance;
 import dagger.Component;
 
 @PerActivity
-@Component(modules = { WheelsModule.class, PetrolEngineModule.class })
+@Component(dependencies = AppComponent.class, modules = { WheelsModule.class, PetrolEngineModule.class })
 public interface ActivityComponent {
     Car getCar();
 

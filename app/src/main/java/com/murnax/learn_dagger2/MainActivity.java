@@ -19,8 +19,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        ActivityComponent activityComponent = ((ExampleApp) getApplication()).getAppComponent();
-//        activityComponent.inject(this);
         ActivityComponent component = DaggerActivityComponent.builder()
                 .horsePower(123)
                 .engineCapacity(456)
