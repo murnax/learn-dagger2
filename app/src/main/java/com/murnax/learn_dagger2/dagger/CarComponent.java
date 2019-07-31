@@ -4,10 +4,12 @@ import com.murnax.learn_dagger2.MainActivity;
 import com.murnax.learn_dagger2.car.Car;
 
 import javax.inject.Named;
+import javax.inject.Singleton;
 
 import dagger.BindsInstance;
 import dagger.Component;
 
+@Singleton
 @Component(modules = { WheelsModule.class, PetrolEngineModule.class })
 public interface CarComponent {
     Car getCar();
